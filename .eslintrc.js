@@ -29,9 +29,9 @@ module.exports = {
     'quotes': [0], // Disables quotes style checking
     'no-multiple-empty-lines': [0], // Allows empty lines
     'import/newline-after-import': 0,     // Disable the empty line after import rule
-    'import/extensions': 0, 
+    'import/extensions': 0,
     'no-trailing-spaces': 'off', // Disable trailing spaces rule
     'react/jsx-tag-spacing': 'off', // Disable space before closing bracket rule    
-        
+    "eol-last": "off"
   },
 };
