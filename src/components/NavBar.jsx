@@ -114,7 +114,7 @@ const NavBar = () => {
         {data?.logo && (
           <Navbar.Brand href="/">
             <img
-              src={data?.logo?.source}
+              src={`${process.env.PUBLIC_URL}/${data?.logo?.source}`}
               className="d-inline-block align-top"
               alt="main logo"
               style={

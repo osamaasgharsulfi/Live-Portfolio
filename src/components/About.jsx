@@ -54,7 +54,7 @@ function About(props) {
                       // style={{ pointerEvents: 'none' }}
                       onContextMenu={(e) => e.preventDefault()} // Disable right-click
                       style={{ userSelect: 'none' }}
-                      src={data?.imageSource}
+                      src={`${process.env.PUBLIC_URL}/${data?.imageSource}`}
                       alt="profile"
                     />
                   </Col>
