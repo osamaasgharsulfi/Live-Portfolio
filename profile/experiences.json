@@ -1,0 +1,41 @@
+{
+    "experiences": [
+        {
+            "title": "SENIOR FULL STACK DEVELOPER",
+            "subtitle": "Sysreforms International",
+            "workType": "Full-time",
+            "workDescription": [
+                "Led backend architecture and development for WOAH platforms including PVS and SONT",
+                "Designed and developed scalable REST APIs using Node.js and Express.js",
+                "Implemented RBAC systems for multi-role workflows (Admin, Editor, Publisher, Validator)",
+                "Built React-based admin dashboards and dynamic UI components",
+                "Optimized backend performance using Node.js child processes and scalable architecture design"
+            ],
+            "dateText": "Jun 2024 – Present"
+        },
+        {
+            "title": "SOFTWARE ENGINEER / BACKEND DEVELOPER",
+            "subtitle": "F3 Technologies",
+            "workType": "Full-time",
+            "workDescription": [
+                "Developed backend services for healthcare and enterprise applications in production",
+                "Built serverless systems using Firebase Cloud Functions",
+                "Integrated Firebase Authentication, FCM notifications, and messaging services",
+                "Designed secure APIs for sensitive healthcare and insurance data systems"
+            ],
+            "dateText": "Jun 2022 – May 2024"
+        },
+        {
+            "title": "WEB DEVELOPER",
+            "subtitle": "Al-Right Tech",
+            "workType": "Full-time",
+            "workDescription": [
+                "Developed backend services using Node.js and MongoDB for client applications",
+                "Refactored legacy systems to modern architecture improving stability",
+                "Implemented authentication systems and optimized database performance",
+                "Worked on API development and system enhancements"
+            ],
+            "dateText": "Jun 2020 – Jul 2021"
+        }
+    ]
+}
