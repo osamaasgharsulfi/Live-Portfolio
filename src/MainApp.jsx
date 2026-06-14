@@ -4,6 +4,7 @@ import FallbackSpinner from './components/FallbackSpinner';
 import NavBarWithRouter from './components/NavBar';
 import Home from './components/Home';
 import endpoints from './constants/endpoints';
+import { Redirect } from 'react-router-dom';
 
 function MainApp() {
   const [data, setData] = useState(null);
@@ -15,6 +16,10 @@ function MainApp() {
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   return (
