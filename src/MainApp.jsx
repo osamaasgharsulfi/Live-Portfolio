@@ -1,21 +1,19 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { Switch, Route } from 'react-router-dom';
-import FallbackSpinner from './components/FallbackSpinner';
+
 import NavBarWithRouter from './components/NavBar';
+import FallbackSpinner from './components/FallbackSpinner';
 import Home from './components/Home';
 import endpoints from './constants/endpoints';
-import { Redirect } from 'react-router-dom';
 
 function MainApp() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.routes, {
-      method: 'GET',
-    })
+    fetch(endpoints.routes, { method: 'GET' })
       .then((res) => res.json())
       .then((res) => setData(res))
-      .catch((err) => err);
+      .catch(() => { });
   }, []);
 
   useEffect(() => {
@@ -25,13 +23,18 @@ function MainApp() {
   return (
     <div className="MainApp">
       <NavBarWithRouter />
+
       <main className="main">
         <Switch>
+          <Route exact path="/" component={Home} />
+
           <Suspense fallback={<FallbackSpinner />}>
-            <Route exact path="/" component={Home} />
-            {data
-              && data.sections.map((route) => {
-                const SectionComponent = React.lazy(() => import('./components/' + route.component));
+            {data &&
+              data.sections.map((route) => {
+                const SectionComponent = React.lazy(() =>
+                  import('./components/' + route.component)
+                );
+
                 return (
                   <Route
                     key={route.headerTitle}
@@ -43,6 +46,9 @@ function MainApp() {
                 );
               })}
           </Suspense>
+
+          {/* fallback route */}
+          <Route component={Home} />
         </Switch>
       </main>
     </div>
