@@ -1,8 +1,8 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
-import NavBarWithRouter from './components/NavBar';
 import FallbackSpinner from './components/FallbackSpinner';
+import NavBarWithRouter from './components/NavBar';
 import Home from './components/Home';
 import endpoints from './constants/endpoints';
 
@@ -10,7 +10,7 @@ function MainApp() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.routes, { method: 'GET' })
+    fetch(endpoints.routes)
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch(() => { });
@@ -25,29 +25,33 @@ function MainApp() {
       <NavBarWithRouter />
 
       <main className="main">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
 
-          {data &&
-            data.sections.map((route) => {
-              const SectionComponent = React.lazy(() =>
-                import('./components/' + route.component)
-              );
+        {/* 🔥 IMPORTANT: Suspense must wrap EVERYTHING */}
+        <Suspense fallback={<FallbackSpinner />}>
+          <Switch>
+            <Route exact path="/" component={Home} />
 
-              return (
-                <Route
-                  key={route.headerTitle}
-                  path={route.path}
-                  render={() => <SectionComponent header={route.headerTitle} />}
-                />
-              );
-            })}
+            {data &&
+              data.sections.map((route) => {
+                const SectionComponent = React.lazy(() =>
+                  import('./components/' + route.component)
+                );
 
-          {/* 🔥 THIS FIXES AUTO LANDING + INVALID ROUTES */}
-          <Route render={() => <Redirect to="/" />} />
-        </Switch>
+                return (
+                  <Route
+                    key={route.headerTitle}
+                    path={route.path}
+                    render={() => (
+                      <SectionComponent header={route.headerTitle} />
+                    )}
+                  />
+                );
+              })}
+
+            <Route component={Home} />
+          </Switch>
+        </Suspense>
+
       </main>
     </div>
   );
