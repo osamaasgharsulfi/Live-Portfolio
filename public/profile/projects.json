@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "image": "images/projects/PVS.jpg",
+            "title": "PVS – Performance of Veterinary Services (WOAH)",
+            "bodyText": "A global capacity-building platform by WOAH focused on strengthening veterinary and aquatic animal health systems through structured evaluations and data-driven reporting. Contributed to building dynamic mission workflows, survey systems, and analytics-ready data pipelines.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://pvs.woah.org/"
+                }
+            ],
+            "tags": [
+                "React JS",
+                "Node JS",
+                "Express JS",
+                "Dynamic Forms",
+                "MSSQL"
+            ]
+        },
+        {
+            "image": "images/projects/sont.jpg",
+            "title": "SONT – Standard Online Navigation Tool (WOAH)",
+            "bodyText": "A centralized document management system for WOAH that streamlines navigation and organization of international animal health standards, codes, and manuals with secure workflows and structured content management.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://sont.woah.org/"
+                }
+            ],
+            "tags": [
+                "Node JS",
+                "Express JS",
+                "RBAC",
+                "Document Management",
+                "MSSQL"
+            ]
+        },
+        {
+            "image": "images/projects/myindici.png",
+            "title": "MyIndici – Healthcare Patient Portal",
+            "bodyText": "A secure cloud-based healthcare platform used in New Zealand enabling patients to manage appointments, prescriptions, health records, virtual consultations, and payments.",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://portal.myindici.co.nz/index.html"
+                }
+            ],
+            "tags": [
+                "Node JS",
+                "Firebase",
+                "Healthcare APIs",
+                "Security",
+                "Cloud"
+            ]
+        }
+    ]
+}

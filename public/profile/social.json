@@ -1,0 +1,17 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/osamaasghar/"
+        },
+        {
+            "network" : "whatsapp",
+            "href": "tel:+923125920981"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:asgharusama4@gmail.com"
+        }
+        
+    ]
+}

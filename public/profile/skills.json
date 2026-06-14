@@ -1,0 +1,110 @@
+{
+    "intro": "Full Stack Developer with 4+ years of experience building scalable web applications in healthcare, enterprise, and international development domains. Passionate about backend systems, APIs, and scalable architectures.",
+    "skills": [
+        {
+            "title": "Backend Development",
+            "items": [
+                {
+                    "icon": "images/skills/nodejs.png",
+                    "title": "Node.js"
+                },
+                {
+                    "icon": "images/skills/express.png",
+                    "title": "Express.js"
+                },
+                {
+                    "icon": "images/skills/nestjs.png",
+                    "title": "NestJS"
+                },
+                {
+                    "icon": "images/skills/websocket.png",
+                    "title": "WebSockets"
+                }
+            ]
+        },
+        {
+            "title": "Databases & ORMs",
+            "items": [
+                {
+                    "icon": "images/skills/mysql.png",
+                    "title": "MySQL"
+                },
+                {
+                    "icon": "images/skills/sql-server.png",
+                    "title": "MS SQL Server"
+                },
+                {
+                    "icon": "images/skills/mongodb.png",
+                    "title": "MongoDB"
+                },
+                {
+                    "icon": "images/skills/prisma.png",
+                    "title": "Prisma"
+                }
+            ]
+        },
+        {
+            "title": "Frontend",
+            "items": [
+                {
+                    "icon": "images/skills/react.png",
+                    "title": "React.js"
+                },
+                {
+                    "icon": "images/skills/html.png",
+                    "title": "HTML"
+                },
+                {
+                    "icon": "images/skills/css.png",
+                    "title": "CSS"
+                },
+                {
+                    "icon": "images/skills/material.png",
+                    "title": "Material UI"
+                },
+                {
+                    "icon": "images/skills/javascript.png",
+                    "title": "JavaScript (ES6+)"
+                }
+            ]
+        },
+        {
+            "title": "Cloud & DevOps",
+            "items": [
+                {
+                    "icon": "images/skills/firebase.png",
+                    "title": "Firebase"
+                },
+                {
+                    "icon": "images/skills/aws.png",
+                    "title": "AWS"
+                },
+                {
+                    "icon": "images/skills/docker.png",
+                    "title": "Docker"
+                },
+                {
+                    "icon": "images/skills/jenkins.png",
+                    "title": "Jenkins"
+                },
+                {
+                    "icon": "images/skills/gcp.png",
+                    "title": "Google Cloud Platform"
+                }
+            ]
+        },
+        {
+            "title": "Languages",
+            "items": [
+                {
+                    "icon": "images/skills/js.png",
+                    "title": "JavaScript"
+                },
+                {
+                    "icon": "images/skills/ts.png",
+                    "title": "TypeScript"
+                }
+            ]
+        }
+    ]
+}

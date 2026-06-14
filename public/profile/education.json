@@ -1,0 +1,19 @@
+{
+    "education": [
+        {
+            "title": "Jun 20XX - Jun 20YY",
+            "cardTitle": "B.Tech, Computer Science",
+            "cardSubtitle": "XYZ University, City",
+            "cardDetailedText": "CGPA - 9.5",
+            "icon": {
+                "src": "images/education/lorem-ipsum.png"
+            }
+        },
+        {
+            "title": "2018 - 2022",
+            "cardTitle": "Bachelor of Science in Software Engineering",
+            "cardSubtitle": "PMAS Arid Agriculture University, Rawalpindi",
+            "cardDetailedText": ""
+        }
+    ]
+}
