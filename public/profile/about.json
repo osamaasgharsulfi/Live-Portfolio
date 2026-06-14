@@ -1,5 +1,5 @@
 {
   "about": "Full Stack Developer with 4+ years of experience in designing, developing, and deploying scalable and user-centric web applications across healthcare, ERP, and enterprise domains using the MERN/SERN stack (MySQL, Express.js, React.js, Node.js, Next.js). I specialize in building complete end-to-end solutions, including backend architecture, database design, and modern responsive frontend interfaces.\n\nI have strong expertise in developing secure and efficient RESTful APIs with authentication, authorization, RBAC, and data validation. I am experienced in working with relational and NoSQL databases, including schema design, complex queries, optimization, and ensuring data integrity for large-scale systems.\n\nOn the frontend, I focus on creating intuitive, responsive, and high-performance user interfaces using React.js and Material UI, delivering seamless user experiences across all devices. I am passionate about writing clean, maintainable, and scalable code with a strong focus on performance, security, and long-term scalability."
 ,
-  "imageSource": "../images/logo.png"
+  "imageSource": "images/logo.png"
 }
