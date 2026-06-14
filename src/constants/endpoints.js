@@ -1,13 +1,15 @@
+const BASE = process.env.PUBLIC_URL;
+
 const endpoints = {
-  navbar: 'profile/navbar.json',
-  routes: 'profile/routes.json',
-  home: 'profile/home.json',
-  social: 'profile/social.json',
-  about: 'profile/about.json',
-  skills: 'profile/skills.json',
-  education: 'profile/education.json',
-  experiences: 'profile/experiences.json',
-  projects: 'profile/projects.json',
+  navbar: `${BASE}/profile/navbar.json`,
+  routes: `${BASE}/profile/routes.json`,
+  home: `${BASE}/profile/home.json`,
+  social: `${BASE}/profile/social.json`,
+  about: `${BASE}/profile/about.json`,
+  skills: `${BASE}/profile/skills.json`,
+  education: `${BASE}/profile/education.json`,
+  experiences: `${BASE}/profile/experiences.json`,
+  projects: `${BASE}/profile/projects.json`,
 };
 
 export default endpoints;
