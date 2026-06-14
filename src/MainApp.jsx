@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import NavBarWithRouter from './components/NavBar';
 import FallbackSpinner from './components/FallbackSpinner';
@@ -26,29 +26,27 @@ function MainApp() {
 
       <main className="main">
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-          <Suspense fallback={<FallbackSpinner />}>
-            {data &&
-              data.sections.map((route) => {
-                const SectionComponent = React.lazy(() =>
-                  import('./components/' + route.component)
-                );
+          {data &&
+            data.sections.map((route) => {
+              const SectionComponent = React.lazy(() =>
+                import('./components/' + route.component)
+              );
 
-                return (
-                  <Route
-                    key={route.headerTitle}
-                    path={route.path}
-                    component={() => (
-                      <SectionComponent header={route.headerTitle} />
-                    )}
-                  />
-                );
-              })}
-          </Suspense>
+              return (
+                <Route
+                  key={route.headerTitle}
+                  path={route.path}
+                  render={() => <SectionComponent header={route.headerTitle} />}
+                />
+              );
+            })}
 
-          {/* fallback route */}
-          <Route component={Home} />
+          {/* 🔥 THIS FIXES AUTO LANDING + INVALID ROUTES */}
+          <Route render={() => <Redirect to="/" />} />
         </Switch>
       </main>
     </div>
